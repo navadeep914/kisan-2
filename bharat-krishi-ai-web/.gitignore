@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+*.h5
+*.pt
+.env
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# Data
+datasets/*.csv
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
