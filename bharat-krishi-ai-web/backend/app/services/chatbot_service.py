@@ -6,26 +6,109 @@ logger = logging.getLogger(__name__)
 
 class ChatbotService:
     def __init__(self):
-        self.api_key = os.getenv("OPENAI_API_KEY", "").strip()
-        self.use_llm = self.api_key and self.api_key != "your_openai_key_here"
+        self.openai_key = os.getenv("OPENAI_API_KEY", "").strip()
+        self.use_openai = self.openai_key and self.openai_key != "your_openai_key_here"
+        
+        self.gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
+        self.use_gemini = self.gemini_key and self.gemini_key != "your_gemini_key_here"
 
     def predict(self, message: str, history: list = None):
-        if self.use_llm:
+        # 1. Try Gemini API first (specifically provided by the user)
+        if self.use_gemini:
             try:
-                # Try calling OpenAI API
+                response_text = self._call_gemini_api(message, history)
+                if response_text:
+                    return response_text
+            except Exception as e:
+                logger.error(f"Gemini API call failed: {e}")
+
+        # 2. Try OpenAI API as fallback
+        if self.use_openai:
+            try:
                 response_text = self._call_openai_api(message, history)
                 if response_text:
                     return response_text
             except Exception as e:
-                logger.error(f"OpenAI API call failed, falling back to local engine: {e}")
+                logger.error(f"OpenAI API call failed: {e}")
 
-        # Fallback to local knowledge matching engine
+        # 3. Local engine fallback
         return self._local_nlp_match(message)
+
+    def _call_gemini_api(self, message: str, history: list = None):
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={self.gemini_key}"
+        headers = {
+            "Content-Type": "application/json"
+        }
+        
+        system_prompt = (
+            "You are Krishi AI, the official intelligent farming assistant for the Bharat Krishi AI (Kisan Sarathi) platform. "
+            "Your job is to assist farmers with agricultural queries and explain all functions and pages of the Bharat Krishi AI website.\n\n"
+            "### Platform Info:\n"
+            "- Name: Bharat Krishi AI (also referred to as Kisan Sarathi).\n"
+            "- Jointly Implemented by: ICAR (Indian Council of Agricultural Research) & Digital India Corporation (DIC), Ministry of Electronics & IT (MeitY), Govt. of India.\n"
+            "- Technology Platform: Powered by IIDS (Interactive Information Dissemination System).\n"
+            "- Technology Stack: FastAPI (Python) backend, local MongoDB + MongoDB Atlas database, and React + Vite frontend.\n\n"
+            "### The 9 Core AI Modules (Sidebar Tabs):\n"
+            "1. **Dashboard (📊)**: Shows farm alerts, weather chip, live market prices ticker, active notifications, and summary cards.\n"
+            "2. **Crop Recommendation (🌱)**: Recommends the optimal crop to cultivate. Takes inputs: Nitrogen (N), Phosphorus (P), Potassium (K), Temperature, Humidity, Soil pH, and Rainfall (mm). Uses machine learning to recommend crops (e.g. Rice, Maize, Cotton) with confidence percentages.\n"
+            "3. **Plant Disease (🦠)**: Scans leaf photos to diagnose diseases. Users can upload/drag-and-drop a leaf image, and the system detects the disease (e.g., Rice Blast, Tomato Leaf Mold) and provides chemical/organic treatments.\n"
+            "4. **Soil Analysis (🪱)**: Checks soil nutrient status. Takes NPK levels and pH to generate a Soil Health Score and a customized Fertilizer Schedule (e.g. Urea top-dressing, SSP basal dose).\n"
+            "5. **Crop Yield (📈)**: Predicts expected production. Takes inputs: Crop name, State, District, Season, Farm Area (acres), and Soil organic carbon. Outputs predicted yield in quintals per acre.\n"
+            "6. **Market Price (💹)**: Displays current mandi prices and 30-day live trends/12-month forecasts for major crops like Rice, Wheat, Onion, Tomato, Maize, Cotton.\n"
+            "7. **Weather (🌦️)**: Uses live integration (OpenWeatherMap or Open-Meteo fallback) to show temperature, humidity, wind, and rain alerts, accompanied by specific agricultural advice (e.g., delay chemical applications if rain is imminent).\n"
+            "8. **Crop Rotation (🔁)**: Suggests sustainable multi-year crop sequences (e.g. Rice -> Black Gram -> Green Manure) to restore nitrogen and prevent pest build-up.\n"
+            "9. **Gov Schemes (🏛️)**: Checks eligibility and application steps for major agricultural schemes like PM-KISAN (₹6000/year support), Rythu Bandhu (investment support), PMFBY (crop insurance), and KCC (low-interest loans).\n\n"
+            "### Other Features:\n"
+            "- **Farmer Profile (👤)**: Displays registered name, state, phone, overall stats (Total Reports, Disease Scans, Soil Tests, Avg Soil Score), and scrollable farming history logs.\n"
+            "- **Language Switcher (🌐)**: Click the globe pill in the top-right navbar to switch the entire UI instantly between English, Hindi, Telugu, and Tamil.\n\n"
+            "### Guidelines:\n"
+            "- Keep your answers helpful, friendly, and practical for farmers.\n"
+            "- Always use clean markdown headers (e.g. `### Title`), bold text (`**text**`), bullet lists (`• item`), or inline code (`` `keyword` ``).\n"
+            "- Encourage users to try the corresponding sidebar tools.\n"
+            "- Respond in the language the user speaks (English, Hindi, Telugu, or Tamil)."
+        )
+
+        contents = []
+        if history:
+            for item in history:
+                role = "user" if item.get("role") == "user" else "model"
+                contents.append({
+                    "role": role,
+                    "parts": [{"text": item.get("content", "")}]
+                })
+        
+        contents.append({
+            "role": "user",
+            "parts": [{"text": message}]
+        })
+        
+        payload = {
+            "contents": contents,
+            "systemInstruction": {
+                "parts": [{"text": system_prompt}]
+            },
+            "generationConfig": {
+                "temperature": 0.7,
+                "maxOutputTokens": 800
+            }
+        }
+        
+        response = requests.post(url, headers=headers, json=payload, timeout=30)
+        if response.status_code == 200:
+            data = response.json()
+            try:
+                return data["candidates"][0]["content"]["parts"][0]["text"]
+            except (KeyError, IndexError) as e:
+                logger.error(f"Failed to parse Gemini response payload: {e}. Raw response: {response.text}")
+                return None
+        else:
+            logger.warning(f"Gemini API returned status code {response.status_code}: {response.text}")
+            return None
 
     def _call_openai_api(self, message: str, history: list = None):
         headers = {
             "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.api_key}"
+            "Authorization": f"Bearer {self.openai_key}"
         }
         
         system_prompt = (
@@ -78,7 +161,7 @@ class ChatbotService:
             "https://api.openai.com/v1/chat/completions",
             headers={
                 "Content-Type": "application/json",
-                "Authorization": f"Bearer {self.api_key}"
+                "Authorization": f"Bearer {self.openai_key}"
             },
             json=payload,
             timeout=8

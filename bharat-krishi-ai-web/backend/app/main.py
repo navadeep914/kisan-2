@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+import os
 from app.routes import (
     crop_recommendation, plant_disease, soil_analysis,
     crop_yield, market_price, weather, crop_rotation,
@@ -38,7 +40,12 @@ app.include_router(chatbot.router,             prefix="/api/chatbot",   tags=["A
 async def startup_event():
     await verify_and_init_db()
 
-@app.get("/")
-def root():
-    return {"message": "🌾 Bharat Krishi AI API is running!", "version": "1.0.0"}
+# Serve frontend production static files if built
+frontend_dist = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist"))
+if os.path.exists(frontend_dist):
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="static")
+else:
+    @app.get("/")
+    def root():
+        return {"message": "🌾 Bharat Krishi AI API is running!", "version": "1.0.0"}
 

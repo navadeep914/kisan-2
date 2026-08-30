@@ -18,8 +18,11 @@ async def predict(request: CropYieldRequest, authorization: Optional[str] = Head
             area=request.area,
             rainfall=request.rainfall
         )
-        
-        # Save to database history
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+    # Save to database history (non-fatal)
+    try:
         await save_prediction(
             db=db,
             authorization=authorization,
@@ -27,8 +30,8 @@ async def predict(request: CropYieldRequest, authorization: Optional[str] = Head
             input_data=request.model_dump(),
             result_data=result
         )
-        
-        return result
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    except Exception:
+        pass
+    
+    return result
 

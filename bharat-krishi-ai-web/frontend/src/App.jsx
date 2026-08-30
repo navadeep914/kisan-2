@@ -64,7 +64,104 @@ const translations = {
     results: "Results",
     loading: "Loading...",
     logout: "Logout",
-    welcome: "Sign In / Register"
+    welcome: "Sign In / Register",
+    
+    // Additional keys
+    soilNutrientsParams: "Soil Nutrients & Environmental Parameters",
+    nitrogen: "Nitrogen (N)",
+    phosphorus: "Phosphorus (P)",
+    potassium: "Potassium (K)",
+    nLabel: "N — Nitrogen (mg/kg)",
+    pLabel: "P — Phosphorus (mg/kg)",
+    kLabel: "K — Potassium (mg/kg)",
+    phLevel: "pH Level",
+    tempLabel: "Temperature (°C)",
+    humLabel: "Humidity (%)",
+    rainLabel: "Rainfall (mm)",
+    getRecommendation: "Get Recommendation",
+    aiRecommendation: "AI Recommendation",
+    confidence: "Confidence",
+    alternativeCrops: "Alternative Crops",
+    adjustInputsToAnalyze: 'Adjust inputs and click "Get Recommendation" to analyze.',
+    runningAiModels: "Running AI models...",
+    dropLeafImage: "Drop leaf image here",
+    tapToCapture: "or tap to capture with camera",
+    uploadBtn: "Upload",
+    cameraBtn: "Camera",
+    detectionResult: "Detection Result",
+    runningCnnClassification: "Running CNN disease classification...",
+    uploadLeafToDiagnose: "Upload or drop a leaf image to diagnose plant health.",
+    treatmentSteps: "Treatment Steps",
+    preventionLabel: "Prevention",
+    soilNutrientInputs: "Soil Nutrient Inputs",
+    analyzeSoilQuality: "Analyze Soil Quality",
+    soilHealthIndex: "Soil Health Index",
+    outOf100: "out of 100",
+    fertilizerRecs: "Fertilizer Recommendations",
+    fertilizerTh: "Fertilizer",
+    doseTh: "Dose",
+    whenTh: "When to Apply",
+    methodTh: "Method",
+    priorityTh: "Priority",
+    predictionParams: "Prediction Parameters",
+    stateLabel: "State",
+    cropLabel: "Crop",
+    areaLabel: "Area (acres)",
+    avgRainLabel: "Avg Rainfall (mm)",
+    predictYieldBtn: "Predict Yield",
+    predictedYieldPerAcre: "Predicted Yield per Acre",
+    quintalsPerAcre: "quintals / acre",
+    totalHarvest: "Total Harvest",
+    estimatedRevenue: "Estimated Revenue",
+    historicalYieldTitle: "Historical Yield Comparison (quintals/acre)",
+    productionTips: "Production Tips",
+    selectCrop: "Select Crop:",
+    priceTrendsTitle: "Price Trends — Last 30 Days (₹/q)",
+    mandiPriceLabel: "Mandi Price",
+    nearestMandiPrices: "Nearest Mandi Prices for",
+    mandiNameTh: "Mandi Name",
+    distanceTh: "Distance",
+    priceTh: "Price (₹/q)",
+    compActionTh: "Comparison / Action",
+    averageRateLabel: "Average rate",
+    searchLocationPlaceholder: "Search location...",
+    searchBtn: "Search",
+    humidityLabel: "Humidity",
+    windLabel: "Wind",
+    feelsLikeLabel: "Feels like",
+    fetchingWeatherLabel: "Fetching live satellite weather forecast...",
+    rotationParams: "Rotation Parameters",
+    currentCrop: "Current Crop",
+    soilType: "Soil Type",
+    currentSeason: "Current Season",
+    planRotationBtn: "Plan Rotation Sequence",
+    rotationTimeline: "Rotation Timeline",
+    selectParamsToPlan: 'Select parameters and click "Plan Rotation Sequence" to see timeline.',
+    generatingRotationLabel: "Generating rotation timeline...",
+    stageLabel: "Stage",
+    nitrogenReplenishment: "Nitrogen replenishment:",
+    farmerProfileFilterTitle: "Farmer Profile",
+    checkEligibility: "Check Eligibility",
+    verifyingSchemesLabel: "Verifying direct-benefit database eligibility...",
+    youAreEligible: "✓ You're Eligible",
+    notEligible: "✗ Not Eligible",
+    applyNow: "Apply Now",
+    viewGuidelines: "View Guidelines",
+    guestModeMsg: "You are currently browsing as a guest.",
+    guestModeDesc: "Sign in to save reports, view fertilizer statistics, and track crop history logs.",
+    totalReportsLabel: "Total Reports",
+    diseaseScansLabel: "Disease Scans",
+    soilTestsLabel: "Soil Tests",
+    avgSoilScoreLabel: "Avg Soil Score",
+    farmingHistoryLogs: "Farming History Logs",
+    noActivityLogs: "No recent farm reports or predictions. Run the AI tools to populate your dashboard!",
+    loadingLogs: "Loading activity logs...",
+    editProfile: "Edit Profile",
+    cancel: "Cancel",
+    saveChanges: "Save Changes",
+    fullName: "Full Name",
+    phoneNumber: "Phone Number",
+    editDetails: "Edit Details"
   },
   hi: {
     dashboard: "डैशबोर्ड",
@@ -108,7 +205,104 @@ const translations = {
     results: "परिणाम",
     loading: "लोड हो रहा है...",
     logout: "लॉग आउट",
-    welcome: "लॉग इन / रजिस्टर"
+    welcome: "लॉग इन / रजिस्टर",
+    
+    // Additional keys
+    soilNutrientsParams: "मिट्टी के पोषक तत्व और पर्यावरणीय पैरामीटर",
+    nitrogen: "नाइट्रोजन (N)",
+    phosphorus: "फास्फोरस (P)",
+    potassium: "पोटेशियम (K)",
+    nLabel: "N — नाइट्रोजन (mg/kg)",
+    pLabel: "P — फास्फोरस (mg/kg)",
+    kLabel: "K — पोटेशियम (mg/kg)",
+    phLevel: "पीएच स्तर",
+    tempLabel: "तापमान (°C)",
+    humLabel: "आर्द्रता (%)",
+    rainLabel: "वर्षा (mm)",
+    getRecommendation: "सिफारिश प्राप्त करें",
+    aiRecommendation: "एआई सिफारिश",
+    confidence: "आत्मविश्वास",
+    alternativeCrops: "वैकल्पिक फसलें",
+    adjustInputsToAnalyze: 'विश्लेषण करने के लिए इनपुट समायोजित करें और "सिफारिश प्राप्त करें" पर क्लिक करें।',
+    runningAiModels: "एआई मॉडल चल रहे हैं...",
+    dropLeafImage: "पत्ती की छवि यहाँ छोड़ें",
+    tapToCapture: "या कैमरे से कैप्चर करने के लिए टैप करें",
+    uploadBtn: "अपलोड करें",
+    cameraBtn: "कैमरा",
+    detectionResult: "रोग पहचान परिणाम",
+    runningCnnClassification: "सीएनएन रोग वर्गीकरण चल रहा है...",
+    uploadLeafToDiagnose: "पौधों के स्वास्थ्य का निदान करने के लिए पत्ती की छवि अपलोड करें या छोड़ें।",
+    treatmentSteps: "उपचार के चरण",
+    preventionLabel: "रोकथाम",
+    soilNutrientInputs: "मृदा पोषक तत्व इनपुट",
+    analyzeSoilQuality: "मृदा गुणवत्ता का विश्लेषण करें",
+    soilHealthIndex: "मृदा स्वास्थ्य सूचकांक",
+    outOf100: "100 में से",
+    fertilizerRecs: "उर्वरक सिफारिशें",
+    fertilizerTh: "उर्वरक",
+    doseTh: "मात्रा",
+    whenTh: "कब लागू करें",
+    methodTh: "विधि",
+    priorityTh: "प्राथमिकता",
+    predictionParams: "पूर्वानुमान पैरामीटर",
+    stateLabel: "राज्य",
+    cropLabel: "फसल",
+    areaLabel: "क्षेत्र (एकड़)",
+    avgRainLabel: "औसत वर्षा (mm)",
+    predictYieldBtn: "उपज का अनुमान लगाएं",
+    predictedYieldPerAcre: "प्रति एकड़ अनुमानित उपज",
+    quintalsPerAcre: "क्विंटल / एकड़",
+    totalHarvest: "कुल उपज",
+    estimatedRevenue: "अनुमानित राजस्व",
+    historicalYieldTitle: "ऐतिहासिक उपज तुलना (क्विंटल/एकड़)",
+    productionTips: "उत्पादन युक्तियाँ",
+    selectCrop: "फसल चुनें:",
+    priceTrendsTitle: "मूल्य रुझान — अंतिम 30 दिन (₹/q)",
+    mandiPriceLabel: "मंडी भाव",
+    nearestMandiPrices: "निकटतम मंडी दरें -",
+    mandiNameTh: "मंडी का नाम",
+    distanceTh: "दूरी",
+    priceTh: "भाव (₹/q)",
+    compActionTh: "तुलना / कार्रवाई",
+    averageRateLabel: "औसत दर",
+    searchLocationPlaceholder: "स्थान खोजें...",
+    searchBtn: "खोजें",
+    humidityLabel: "आर्द्रता",
+    windLabel: "हवा",
+    feelsLikeLabel: "महसूस होता है",
+    fetchingWeatherLabel: "लाइव सैटेलाइट मौसम पूर्वानुमान प्राप्त किया जा रहा है...",
+    rotationParams: "फसल चक्र पैरामीटर",
+    currentCrop: "वर्तमान फसल",
+    soilType: "मिट्टी का प्रकार",
+    currentSeason: "वर्तमान मौसम",
+    planRotationBtn: "फसल चक्र अनुसूची की योजना बनाएं",
+    rotationTimeline: "फसल चक्र समयरेखा",
+    selectParamsToPlan: 'समयरेखा देखने के लिए पैरामीटर चुनें और "फसल चक्र अनुसूची की योजना बनाएं" पर क्लिक करें।',
+    generatingRotationLabel: "फसल चक्र समयरेखा तैयार की जा रही है...",
+    stageLabel: "चरण",
+    nitrogenReplenishment: "नाइट्रोजन पुनःपूर्ति:",
+    farmerProfileFilterTitle: "कृषक प्रोफ़ाइल",
+    checkEligibility: "पात्रता की जांच करें",
+    verifyingSchemesLabel: "प्रत्यक्ष-लाभ डेटाबेस पात्रता की पुष्टि की जा रही है...",
+    youAreEligible: "✓ आप पात्र हैं",
+    notEligible: "✗ पात्र नहीं हैं",
+    applyNow: "अभी आवेदन करें",
+    viewGuidelines: "दिशानिर्देश देखें",
+    guestModeMsg: "आप वर्तमान में एक अतिथि के रूप में ब्राउज़ कर रहे हैं।",
+    guestModeDesc: "रिपोर्ट सहेजने, उर्वरक आंकड़े देखने और फसल इतिहास लॉग को ट्रैक करने के लिए साइन इन करें।",
+    totalReportsLabel: "कुल रिपोर्ट",
+    diseaseScansLabel: "रोग स्कैन",
+    soilTestsLabel: "मृदा परीक्षण",
+    avgSoilScoreLabel: "औसत मिट्टी स्कोर",
+    farmingHistoryLogs: "खेती का इतिहास लॉग",
+    noActivityLogs: "कोई हालिया कृषि रिपोर्ट या पूर्वानुमान नहीं। अपने डैशबोर्ड को आबाद करने के लिए एआई टूल चलाएं!",
+    loadingLogs: "गतिविधि लॉग लोड हो रहे हैं...",
+    editProfile: "प्रोफ़ाइल संपादित करें",
+    cancel: "रद्द करें",
+    saveChanges: "बदलाव सहेजें",
+    fullName: "पूरा नाम",
+    phoneNumber: "फ़ोन नंबर",
+    editDetails: "विवरण संपादित करें"
   },
   te: {
     dashboard: "డాష్‌బోర్డ్",
@@ -152,7 +346,104 @@ const translations = {
     results: "ఫలితాలు",
     loading: "భారం అవుతోంది...",
     logout: "లాగ్ అవుట్",
-    welcome: "సైన్ ఇన్ / రిజిస్టర్"
+    welcome: "సైన్ ఇన్ / రిజిస్టర్",
+    
+    // Additional keys
+    soilNutrientsParams: "నేల పోషకాలు & పర్యావరణ పారామితులు",
+    nitrogen: "నైట్రోజన్ (N)",
+    phosphorus: "ఫాస్ఫరస్ (P)",
+    potassium: "పొటాషియం (K)",
+    nLabel: "N — నైట్రోజన్ (mg/kg)",
+    pLabel: "P — ఫాస్ఫరస్ (mg/kg)",
+    kLabel: "K — పొటాషియం (mg/kg)",
+    phLevel: "pH స్థాయి",
+    tempLabel: "ఉష్ణోగ్రత (°C)",
+    humLabel: "తేమ (%)",
+    rainLabel: "వర్షపాతం (mm)",
+    getRecommendation: "సిఫార్సు పొందండి",
+    aiRecommendation: "AI సిఫార్సు",
+    confidence: "విశ్వాసం",
+    alternativeCrops: "ప్రత్యామ్నాయ పంటలు",
+    adjustInputsToAnalyze: 'విస్టేషించడానికి ఇన్‌పుట్‌లను సర్దుబాటు చేసి, "సిఫార్సు పొందండి" క్లిక్ చేయండి.',
+    runningAiModels: "AI మోడల్స్ రన్ అవుతున్నాయి...",
+    dropLeafImage: "ఆకు చిత్రాన్ని ఇక్కడ వేయండి",
+    tapToCapture: "లేదా కెమెరాతో క్యాప్చర్ చేయడానికి నొక్కండి",
+    uploadBtn: "అప్లోడ్ చేయి",
+    cameraBtn: "కెమెరా",
+    detectionResult: "వ్యాధి గుర్తింపు ఫలితం",
+    runningCnnClassification: "CNN వ్యాధి వర్గీకరణ రన్ అవుతోంది...",
+    uploadLeafToDiagnose: "మొక్కల ఆరోగ్యాన్ని గుర్తించడానికి ఆకు చిత్రాన్ని అప్‌లోడ్ చేయండి లేదా ఇక్కడ వేయండి.",
+    treatmentSteps: "చికిత్స దశలు",
+    preventionLabel: "నివారణ",
+    soilNutrientInputs: "నేల పోషకాల ఇన్‌పుట్‌లు",
+    analyzeSoilQuality: "నేల నాణ్యతను విశ్లేషించండి",
+    soilHealthIndex: "నేల ఆరోగ్య సూచిక",
+    outOf100: "100 కి",
+    fertilizerRecs: "ఎరువుల సిఫార్సులు",
+    fertilizerTh: "ఎరువులు",
+    doseTh: "మోతాదు",
+    whenTh: "ఎప్పుడు వేయాలి",
+    methodTh: "విధానం",
+    priorityTh: "ప్రాధాన్యత",
+    predictionParams: "అంచనా పారామితులు",
+    stateLabel: "రాష్ట్రం",
+    cropLabel: "పంట",
+    areaLabel: "ప్రాంతం (ఎకరాలు)",
+    avgRainLabel: "సగటు వర్షపాతం (mm)",
+    predictYieldBtn: "దిగుబడిని అంచనా వేయి",
+    predictedYieldPerAcre: "ఎకరాకు అంచనా దిగుబడి",
+    quintalsPerAcre: "క్వింటాళ్లు / ఎకరా",
+    totalHarvest: "మొత్తం దిగుబడి",
+    estimatedRevenue: "అంచనా ఆదాయం",
+    historicalYieldTitle: "చారిత్రక దిగుబడి పోలిక (క్వింటాళ్లు/ఎకరా)",
+    productionTips: "ఉత్పత్తి చిట్కాలు",
+    selectCrop: "పంటను ఎంచుకోండి:",
+    priceTrendsTitle: "ధరల పోకడలు — గత 30 రోజులు (₹/q)",
+    mandiPriceLabel: "మండి ధర",
+    nearestMandiPrices: "సమీప మండి ధరలు -",
+    mandiNameTh: "మండి పేరు",
+    distanceTh: "దూరం",
+    priceTh: "ధర (₹/q)",
+    compActionTh: "పోలిక / చర్య",
+    averageRateLabel: "సగటు ధర",
+    searchLocationPlaceholder: "స్థానాన్ని శోధించండి...",
+    searchBtn: "వెతుకు",
+    humidityLabel: "తేమ",
+    windLabel: "గాలి",
+    feelsLikeLabel: "అనిపిస్తుంది",
+    fetchingWeatherLabel: "లైవ్ శాటిలైట్ వాతావరణ సమాచారాన్ని పొందుతోంది...",
+    rotationParams: "పంట మార్పిడి పారామితులు",
+    currentCrop: "ప్రస్తుత పంట",
+    soilType: "నేల రకం",
+    currentSeason: "ప్రస్తుత కాలం",
+    planRotationBtn: "పంట మార్పిడి ప్రణాళికను సిద్ధం చేయి",
+    rotationTimeline: "పంట మార్పిడి కాలక్రమం",
+    selectParamsToPlan: 'కాలక్రమాన్ని చూడటానికి పారామితులను ఎంచుకుని, "పంట మార్పిడి ప్రణాళికను సిద్ధం చేయి" క్లిక్ చేయండి.',
+    generatingRotationLabel: "పంట మార్పిడి కాలక్రమాన్ని సిద్ధం చేస్తోంది...",
+    stageLabel: "దశ",
+    nitrogenReplenishment: "నైట్రోజన్ పునరుద్ధరణ:",
+    farmerProfileFilterTitle: "రైతు ప్రొఫైల్",
+    checkEligibility: "అర్హతను తనిఖీ చేయి",
+    verifyingSchemesLabel: "నేరుగా లబ్ధిదారుల డేటాబేస్ అర్హతను పరిశీలిస్తోంది...",
+    youAreEligible: "✓ మీరు అర్హులు",
+    notEligible: "✗ అర్హత లేదు",
+    applyNow: "ఇప్పుడే దరఖాస్తు చేయి",
+    viewGuidelines: "మార్గదర్శకాలను చూడు",
+    guestModeMsg: "మీరు ప్రస్తుతం అతిథిగా బ్రౌజ్ చేస్తున్నారు.",
+    guestModeDesc: "నివేదికలను సేవ్ చేయడానికి, ఎరువుల గణాంకాలను చూడటానికి మరియు పంట చరిత్ర లాగ్‌లను ట్రాక్ చేయడానికి సైన్ ఇన్ చేయండి.",
+    totalReportsLabel: "మొత్తం నివేదికలు",
+    diseaseScansLabel: "వ్యాధి స్కాన్లు",
+    soilTestsLabel: "నేల పరీక్షలు",
+    avgSoilScoreLabel: "సగటు నేల స్కోరు",
+    farmingHistoryLogs: "వ్యవసాయ చరిత్ర లాగ్‌లు",
+    noActivityLogs: "ఇటీవలి వ్యవసాయ నివేదికలు లేదా అంచనాలు లేవు. మీ డాష్‌బోర్డ్‌ను నింపడానికి AI సాధనాలను రన్ చేయండి!",
+    loadingLogs: "కార్యకలాపాల లాగ్‌లను లోడ్ చేస్తోంది...",
+    editProfile: "ప్రొఫైల్ సవరించు",
+    cancel: "రద్దు చేయి",
+    saveChanges: "మార్పులను సేవ్ చేయి",
+    fullName: "పూర్తి పేరు",
+    phoneNumber: "ఫోన్ నంబర్",
+    editDetails: "వివరాలను సవరించు"
   },
   ta: {
     dashboard: "டாஷ்போர்டு",
@@ -196,7 +487,104 @@ const translations = {
     results: "முடிவுகள்",
     loading: "ஏற்றப்படுகிறது...",
     logout: "வெளியேறு",
-    welcome: "உள்நுழைக / பதிவுசெய்"
+    welcome: "உள்நுழைக / பதிவுசெய்",
+    
+    // Additional keys
+    soilNutrientsParams: "மண் ஊட்டச்சத்துக்கள் மற்றும் சுற்றுச்சூழல் அளவுருக்கள்",
+    nitrogen: "நைட்ரஜன் (N)",
+    phosphorus: "பாஸ்பரஸ் (P)",
+    potassium: "பொட்டாசியம் (K)",
+    nLabel: "N — நைட்ரஜன் (மிகி/கிகி)",
+    pLabel: "P — பாஸ்பரஸ் (மிகி/கிகி)",
+    kLabel: "K — பொட்டாசியம் (மிகி/கிகி)",
+    phLevel: "pH அளவு",
+    tempLabel: "வெப்பநிலை (°C)",
+    humLabel: "ஈரப்பதம் (%)",
+    rainLabel: "மழைப்பொழிவு (மிமீ)",
+    getRecommendation: "பரிந்துரையைப் பெறுங்கள்",
+    aiRecommendation: "AI பரிந்துரை",
+    confidence: "நம்பகத்தன்மை",
+    alternativeCrops: "மாற்று பயிர்கள்",
+    adjustInputsToAnalyze: 'பகுப்பாய்வு செய்ய இன்புட்டுகளை சரிசெய்து "பரிந்துரையைப் பெறுங்கள்" என்பதைக் கிளிக் செய்யவும்.',
+    runningAiModels: "AI மாதிரிகள் இயங்குகின்றன...",
+    dropLeafImage: "இலை படத்தை இங்கே விடவும்",
+    tapToCapture: "அல்லது கேமரா மூலம் படம் பிடிக்க தட்டவும்",
+    uploadBtn: "பதிவேற்று",
+    cameraBtn: "கேமரா",
+    detectionResult: "கண்டறிதல் முடிவு",
+    runningCnnClassification: "CNN நோய் வகைப்பாடு இயங்குகிறது...",
+    uploadLeafToDiagnose: "தாவர ஆரோக்கியத்தைக் கண்டறிய இலை படத்தை பதிவேற்றவும் அல்லது விடவும்.",
+    treatmentSteps: "சிகிச்சை முறைகள்",
+    preventionLabel: "தடுப்பு",
+    soilNutrientInputs: "மண் ஊட்டச்சத்து உள்ளீடுகள்",
+    analyzeSoilQuality: "மண் தரத்தை பகுப்பாய்வு செய்",
+    soilHealthIndex: "மண் சுகாதார குறியீடு",
+    outOf100: "100 இல்",
+    fertilizerRecs: "உர பரிந்துரைகள்",
+    fertilizerTh: "உரம்",
+    doseTh: "அளவு",
+    whenTh: "எப்போது பயன்படுத்துவது",
+    methodTh: "முறை",
+    priorityTh: "முன்னுரிமை",
+    predictionParams: "கணிப்பு அளவுருக்கள்",
+    stateLabel: "மாநிலம்",
+    cropLabel: "பயிர்",
+    areaLabel: "பரப்பளவு (ஏக்கர்)",
+    avgRainLabel: "சராசரி மழைப்பொழிவு (மிமீ)",
+    predictYieldBtn: "விளைச்சலைக் கணி",
+    predictedYieldPerAcre: "ஒரு ஏக்கருக்கான கணிப்பு விளைச்சல்",
+    quintalsPerAcre: "குவிண்டால் / ஏக்கர்",
+    totalHarvest: "மொத்த விளைச்சல்",
+    estimatedRevenue: "மதிப்பிடப்பட்ட வருவாய்",
+    historicalYieldTitle: "வரலாற்று விளைச்சல் ஒப்பீடு (குவிண்டால்/ஏக்கர்)",
+    productionTips: "உற்பத்தி குறிப்புகள்",
+    selectCrop: "பயிரைத் தேர்ந்தெடு:",
+    priceTrendsTitle: "விலை போக்குகள் — கடந்த 30 நாட்கள் (₹/q)",
+    mandiPriceLabel: "மண்டி விலை",
+    nearestMandiPrices: "அருகிலுள்ள மண்டி விலைகள் -",
+    mandiNameTh: "மண்டியின் பெயர்",
+    distanceTh: "தூரம்",
+    priceTh: "விலை (₹/q)",
+    compActionTh: "ஒப்பீடு / நடவடிக்கை",
+    averageRateLabel: "சராசரி விலை",
+    searchLocationPlaceholder: "இருப்பிடத்தைத் தேடு...",
+    searchBtn: "தேடு",
+    humidityLabel: "ஈரப்பதம்",
+    windLabel: "காற்று",
+    feelsLikeLabel: "உணர்வு",
+    fetchingWeatherLabel: "நேரடி செயற்கைக்கோள் வானிலை முன்னறிவிப்பைப் பெறுகிறது...",
+    rotationParams: "சுழற்சி அளவுருக்கள்",
+    currentCrop: "தற்போதைய பயிர்",
+    soilType: "மண் வகை",
+    currentSeason: "தற்போதைய பருவம்",
+    planRotationBtn: "சுழற்சி வரிசையைத் திட்டமிடு",
+    rotationTimeline: "சுழற்சி காலவரிசை",
+    selectParamsToPlan: 'காலவரிசையைக் காண அளவுமுடுவலைத் தேர்ந்தெடுத்து "சுழற்சி வரிசையைத் திட்டமிடு" என்பதைக் கிளிக் செய்யவும்.',
+    generatingRotationLabel: "சுழற்சி காலவரிசையை உருவாக்குகிறது...",
+    stageLabel: "நிலை",
+    nitrogenReplenishment: "N  நிரப்புதல்:",
+    farmerProfileFilterTitle: "விவசாயி சுயவிவரம்",
+    checkEligibility: "தகுதியைச் சரிபார்",
+    verifyingSchemesLabel: "நேரடி பயன் தரவுத்தள தகுதியைச் சரிபார்க்கிறது...",
+    youAreEligible: "✓ நீங்கள் தகுதியானவர்",
+    notEligible: "✗ தகுதியற்றவர்",
+    applyNow: "இப்போதே விண்ணப்பி",
+    viewGuidelines: "வழிமுறைகளைப் பார்",
+    guestModeMsg: "நீங்கள் தற்போது விருந்தினராக உலாவுகிறீர்கள்.",
+    guestModeDesc: "அறிக்கைகளைச் சேமிக்கவும், உரப் புள்ளிவிவரங்களைப் பார்க்கவும் மற்றும் பயிர் வரலாற்றுப் பதிவுகளைக் கண்காணிக்கவும் உள்நுழையவும்.",
+    totalReportsLabel: "மொத்த அறிக்கைகள்",
+    diseaseScansLabel: "நோய் ஸ்கேன்கள்",
+    soilTestsLabel: "மண் பரிசோதனைகள்",
+    avgSoilScoreLabel: "சராசரி மண் மதிப்பெண்",
+    farmingHistoryLogs: "விவசாய வரலாற்றுப் பதிவுகள்",
+    noActivityLogs: "சமீபத்திய விவசாய அறிக்கைகள் அல்லது கணிப்புகள் எதுவும் இல்லை. உங்கள் டாஷ்போர்டை நிரப்ப AI கருவிகளை இயக்கவும்!",
+    loadingLogs: "செயல்பாட்டுப் பதிவுகளை ஏற்றுகிறது...",
+    editProfile: "சுயவிவரத்தைத் திருத்து",
+    cancel: "ரத்து செய்",
+    saveChanges: "மாற்றங்களைச் சேமி",
+    fullName: "முழு பெயர்",
+    phoneNumber: "தொலைபேசி எண்",
+    editDetails: "விவரங்களைத் திருத்து"
   }
 };
 
@@ -983,63 +1371,63 @@ function CropPage() {
       <div className="section-title" style={{ fontSize: 18 }}>🌱 {t('crop')}</div>
       <div className="two-col">
         <div className="input-panel">
-          <div className="form-label">Soil Nutrients & Environmental Parameters</div>
+          <div className="form-label">{t('soilNutrientsParams')}</div>
           <div className="nutrient-row">
             <div className="nutrient-box">
-              <div className="nutrient-name">Nitrogen (N)</div>
+              <div className="nutrient-name">{t('nitrogen')}</div>
               <div className="nutrient-val" style={{ color: '#16a34a' }}>{n}</div>
             </div>
             <div className="nutrient-box">
-              <div className="nutrient-name">Phosphorus (P)</div>
+              <div className="nutrient-name">{t('phosphorus')}</div>
               <div className="nutrient-val" style={{ color: '#f59e0b' }}>{p}</div>
             </div>
             <div className="nutrient-box">
-              <div className="nutrient-name">Potassium (K)</div>
+              <div className="nutrient-name">{t('potassium')}</div>
               <div className="nutrient-val" style={{ color: '#3b82f6' }}>{k}</div>
             </div>
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>N — Nitrogen (mg/kg)</span><span>{n}</span></div>
+            <div className="slider-label"><span>{t('nLabel')}</span><span>{n}</span></div>
             <input type="range" min="0" max="200" value={n} onChange={e => setN(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>P — Phosphorus (mg/kg)</span><span>{p}</span></div>
+            <div className="slider-label"><span>{t('pLabel')}</span><span>{p}</span></div>
             <input type="range" min="0" max="200" value={p} onChange={e => setP(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>K — Potassium (mg/kg)</span><span>{k}</span></div>
+            <div className="slider-label"><span>{t('kLabel')}</span><span>{k}</span></div>
             <input type="range" min="0" max="200" value={k} onChange={e => setK(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>pH Level</span><span>{ph.toFixed(1)}</span></div>
+            <div className="slider-label"><span>{t('phLevel')}</span><span>{ph.toFixed(1)}</span></div>
             <input type="range" min="4" max="9" step="0.1" value={ph} onChange={e => setPh(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>Temperature (°C)</span><span>{temp}</span></div>
+            <div className="slider-label"><span>{t('tempLabel')}</span><span>{temp}</span></div>
             <input type="range" min="10" max="50" value={temp} onChange={e => setTemp(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>Humidity (%)</span><span>{hum}</span></div>
+            <div className="slider-label"><span>{t('humLabel')}</span><span>{hum}</span></div>
             <input type="range" min="20" max="100" value={hum} onChange={e => setHum(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>Rainfall (mm)</span><span>{rainfall}</span></div>
+            <div className="slider-label"><span>{t('rainLabel')}</span><span>{rainfall}</span></div>
             <input type="range" min="30" max="300" value={rainfall} onChange={e => setRainfall(+e.target.value)} />
           </div>
-          <button onClick={handlePredict} className="btn-primary">🔍 Get Recommendation</button>
+          <button onClick={handlePredict} className="btn-primary">🔍 {t('getRecommendation')}</button>
         </div>
 
         <div className="result-panel">
           {error && <div style={{ color: 'var(--err)', fontSize: 13, marginBottom: 10 }}>{error}</div>}
-          {loading && <div style={{ textAlign: 'center', padding: 40 }}>Running AI models...</div>}
+          {loading && <div style={{ textAlign: 'center', padding: 40 }}>{t('runningAiModels')}</div>}
           {!result && !loading && (
             <div style={{ textAlign: 'center', color: 'var(--gray)', padding: '120px 10px' }}>
-              Adjust inputs and click "Get Recommendation" to analyze.
+              {t('adjustInputsToAnalyze')}
             </div>
           )}
           {result && !loading && (
             <>
-              <div className="form-label" style={{ textAlign: 'center' }}>AI Recommendation</div>
+              <div className="form-label" style={{ textAlign: 'center' }}>{t('aiRecommendation')}</div>
               <div className="confidence-ring-wrap">
                 <div className="confidence-ring">
                   <svg width="120" height="120">
@@ -1050,13 +1438,13 @@ function CropPage() {
                   </svg>
                   <div className="ring-text">
                     <span className="ring-pct">{result.confidence}%</span>
-                    <span className="ring-label">Confidence</span>
+                    <span className="ring-label">{t('confidence')}</span>
                   </div>
                 </div>
                 <div className="crop-result-name">{result.emoji} {result.recommended_crop?.toUpperCase()}</div>
               </div>
 
-              <div className="form-label">Alternative Crops</div>
+              <div className="form-label">{t('alternativeCrops')}</div>
               <div className="alt-crops">
                 {result.alternatives?.map((c, i) => (
                   <div key={i} className="alt-crop-row">
@@ -1146,22 +1534,22 @@ function DiseasePage() {
           ) : (
             <>
               <div style={{ fontSize: 48 }}>📷</div>
-              <div style={{ fontWeight: 600, color: 'var(--green)', fontSize: 14 }}>Drop leaf image here</div>
-              <div style={{ fontSize: 12, color: 'var(--gray)' }}>or tap to capture with camera</div>
+              <div style={{ fontWeight: 600, color: 'var(--green)', fontSize: 14 }}>{t('dropLeafImage')}</div>
+              <div style={{ fontSize: 12, color: 'var(--gray)' }}>{t('tapToCapture')}</div>
               <div style={{ display: 'flex', gap: 8, marginTop: 4 }}>
-                <button className="btn-sm btn-green" onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}>📁 Upload</button>
-                <button className="btn-sm btn-outline" onClick={(e) => e.stopPropagation()}>📷 Camera</button>
+                <button className="btn-sm btn-green" onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}>📁 {t('uploadBtn')}</button>
+                <button className="btn-sm btn-outline" onClick={(e) => e.stopPropagation()}>📷 {t('cameraBtn')}</button>
               </div>
             </>
           )}
         </div>
         <div className="result-panel">
-          <div className="form-label" style={{ marginBottom: 10 }}>Detection Result</div>
+          <div className="form-label" style={{ marginBottom: 10 }}>{t('detectionResult')}</div>
           {error && <div style={{ color: 'var(--err)', fontSize: 13, padding: 10 }}>{error}</div>}
-          {loading && <div style={{ textAlign: 'center', padding: 20 }}>Running CNN disease classification...</div>}
+          {loading && <div style={{ textAlign: 'center', padding: 20 }}>{t('runningCnnClassification')}</div>}
           {!result && !loading && !error && (
             <div style={{ textAlign: 'center', color: 'var(--gray)', padding: 40 }}>
-              Upload or drop a leaf image to diagnose plant health.
+              {t('uploadLeafToDiagnose')}
             </div>
           )}
           {result && !loading && (
@@ -1181,7 +1569,7 @@ function DiseasePage() {
                   {result.symptoms}
                 </div>
               </div>
-              <div className="form-label">Treatment Steps</div>
+              <div className="form-label">{t('treatmentSteps')}</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                 {result.treatment.map((step, i) => (
                   <div key={i} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', fontSize: 12 }}>
@@ -1191,7 +1579,7 @@ function DiseasePage() {
                 ))}
               </div>
               <div className="advice-banner" style={{ marginTop: 12, fontSize: 11 }}>
-                🛡️ <strong>Prevention:</strong> {result.prevention}
+                🛡️ <strong>{t('preventionLabel')}:</strong> {result.prevention}
               </div>
             </>
           )}
@@ -1240,17 +1628,17 @@ function SoilPage() {
   const getDials = () => {
     if (result) {
       return [
-        { name: 'Nitrogen (N)', val: `${result.nutrients.nitrogen.level} mg/kg`, color: result.nutrients.nitrogen.color, offset: getOffsetForNutrient(result.nutrients.nitrogen.level, 120), status: result.nutrients.nitrogen.status, cls: result.nutrients.nitrogen.cls },
-        { name: 'Phosphorus (P)', val: `${result.nutrients.phosphorus.level} mg/kg`, color: result.nutrients.phosphorus.color, offset: getOffsetForNutrient(result.nutrients.phosphorus.level, 80), status: result.nutrients.phosphorus.status, cls: result.nutrients.phosphorus.cls },
-        { name: 'Potassium (K)', val: `${result.nutrients.potassium.level} mg/kg`, color: result.nutrients.potassium.color, offset: getOffsetForNutrient(result.nutrients.potassium.level, 100), status: result.nutrients.potassium.status, cls: result.nutrients.potassium.cls },
-        { name: 'pH Level', val: result.nutrients.ph.level, color: result.nutrients.ph.color, offset: getOffsetForNutrient(result.nutrients.ph.level, 14), status: result.nutrients.ph.status, cls: result.nutrients.ph.cls },
+        { name: t('nitrogen'), val: `${result.nutrients.nitrogen.level} mg/kg`, color: result.nutrients.nitrogen.color, offset: getOffsetForNutrient(result.nutrients.nitrogen.level, 120), status: result.nutrients.nitrogen.status, cls: result.nutrients.nitrogen.cls },
+        { name: t('phosphorus'), val: `${result.nutrients.phosphorus.level} mg/kg`, color: result.nutrients.phosphorus.color, offset: getOffsetForNutrient(result.nutrients.phosphorus.level, 80), status: result.nutrients.phosphorus.status, cls: result.nutrients.phosphorus.cls },
+        { name: t('potassium'), val: `${result.nutrients.potassium.level} mg/kg`, color: result.nutrients.potassium.color, offset: getOffsetForNutrient(result.nutrients.potassium.level, 100), status: result.nutrients.potassium.status, cls: result.nutrients.potassium.cls },
+        { name: t('phLevel'), val: result.nutrients.ph.level, color: result.nutrients.ph.color, offset: getOffsetForNutrient(result.nutrients.ph.level, 14), status: result.nutrients.ph.status, cls: result.nutrients.ph.cls },
       ];
     }
     return [
-      { name: 'Nitrogen (N)', val: '80 mg/kg', color: '#2d6a4f', offset: getOffsetForNutrient(80, 120), status: 'Optimal', cls: 'status-good' },
-      { name: 'Phosphorus (P)', val: '22 mg/kg', color: '#e63946', offset: getOffsetForNutrient(22, 80), status: 'Low', cls: 'status-low' },
-      { name: 'Potassium (K)', val: '60 mg/kg', color: '#f59e0b', offset: getOffsetForNutrient(60, 100), status: 'Moderate', cls: 'status-ok' },
-      { name: 'pH Level', val: '6.5', color: '#3b82f6', offset: getOffsetForNutrient(6.5, 14), status: 'Optimal', cls: 'status-good' },
+      { name: t('nitrogen'), val: '80 mg/kg', color: '#2d6a4f', offset: getOffsetForNutrient(80, 120), status: 'Optimal', cls: 'status-good' },
+      { name: t('phosphorus'), val: '22 mg/kg', color: '#e63946', offset: getOffsetForNutrient(22, 80), status: 'Low', cls: 'status-low' },
+      { name: t('potassium'), val: '60 mg/kg', color: '#f59e0b', offset: getOffsetForNutrient(60, 100), status: 'Moderate', cls: 'status-ok' },
+      { name: t('phLevel'), val: '6.5', color: '#3b82f6', offset: getOffsetForNutrient(6.5, 14), status: 'Optimal', cls: 'status-good' },
     ];
   };
 
@@ -1268,35 +1656,34 @@ function SoilPage() {
       <div className="section-title" style={{ fontSize: 18 }}>🪱 {t('soil')}</div>
       <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 12, marginBottom: 12 }}>
         <div className="input-panel">
-          <div className="form-label">Soil Nutrient Inputs</div>
+          <div className="form-label">{t('soilNutrientInputs')}</div>
           <div className="slider-row">
-            <div className="slider-label"><span>Nitrogen (N) (mg/kg)</span><span>{n}</span></div>
+            <div className="slider-label"><span>{t('nitrogen')} (mg/kg)</span><span>{n}</span></div>
             <input type="range" min="0" max="150" value={n} onChange={e => setN(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>Phosphorus (P) (mg/kg)</span><span>{p}</span></div>
-            <input type="range" min="0" max="100" value={p} onChange={e => setN(+e.target.value)} /> {/* Wait, setP instead of setN! Fixed below */}
+            <div className="slider-label"><span>{t('phosphorus')} (mg/kg)</span><span>{p}</span></div>
             <input type="range" min="0" max="100" value={p} onChange={e => setP(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>Potassium (K) (mg/kg)</span><span>{k}</span></div>
+            <div className="slider-label"><span>{t('potassium')} (mg/kg)</span><span>{k}</span></div>
             <input type="range" min="0" max="120" value={k} onChange={e => setK(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>pH Level</span><span>{ph.toFixed(1)}</span></div>
+            <div className="slider-label"><span>{t('phLevel')}</span><span>{ph.toFixed(1)}</span></div>
             <input type="range" min="3" max="11" step="0.1" value={ph} onChange={e => setPh(+e.target.value)} />
           </div>
-          <button onClick={handleAnalyze} className="btn-primary">🪱 Analyze Soil Quality</button>
+          <button onClick={handleAnalyze} className="btn-primary">🪱 {t('analyzeSoilQuality')}</button>
         </div>
 
         <div className="soil-score-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-          <div style={{ fontSize: 13, opacity: 0.85, marginBottom: 4 }}>Soil Health Index</div>
+          <div style={{ fontSize: 13, opacity: 0.85, marginBottom: 4 }}>{t('soilHealthIndex')}</div>
           {loading ? (
-            <div style={{ fontSize: 24, fontWeight: 500, margin: '20px 0' }}>Analyzing...</div>
+            <div style={{ fontSize: 24, fontWeight: 500, margin: '20px 0' }}>{t('loading')}</div>
           ) : (
             <>
               <div className="soil-score-num">{score}</div>
-              <div style={{ fontSize: 12, opacity: 0.85, marginTop: 4 }}>out of 100 ({healthLabel})</div>
+              <div style={{ fontSize: 12, opacity: 0.85, marginTop: 4 }}>{t('outOf100')} ({healthLabel})</div>
               <div style={{ marginTop: 12, fontSize: 11, opacity: 0.85, maxWidth: 200, lineHeight: 1.4 }}>{healthAdvice}</div>
             </>
           )}
@@ -1323,10 +1710,10 @@ function SoilPage() {
       </div>
 
       <div className="fert-table" style={{ marginTop: 12 }}>
-        <div className="section-title" style={{ marginBottom: 10 }}>Fertilizer Recommendations</div>
+        <div className="section-title" style={{ marginBottom: 10 }}>{t('fertilizerRecs')}</div>
         {error && <div style={{ color: 'var(--err)', fontSize: 12 }}>{error}</div>}
         <table className="fert">
-          <thead><tr><th>Fertilizer</th><th>Dose</th><th>When to Apply</th><th>Method</th><th>Priority</th></tr></thead>
+          <thead><tr><th>{t('fertilizerTh')}</th><th>{t('doseTh')}</th><th>{t('whenTh')}</th><th>{t('methodTh')}</th><th>{t('priorityTh')}</th></tr></thead>
           <tbody>
             {fertilizers.map((f, i) => (
               <tr key={i}>
@@ -1400,9 +1787,9 @@ function YieldPage() {
       <div className="section-title" style={{ fontSize: 18 }}>📈 {t('yield')}</div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
         <div className="input-panel">
-          <div className="form-label" style={{ marginBottom: 8 }}>Prediction Parameters</div>
+          <div className="form-label" style={{ marginBottom: 8 }}>{t('predictionParams')}</div>
           <div className="slider-row">
-            <div className="slider-label"><span>State</span></div>
+            <div className="slider-label"><span>{t('stateLabel')}</span></div>
             <select value={state} onChange={e => setState(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 7, fontSize: 13, color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
               <option>Telangana</option>
               <option>Andhra Pradesh</option>
@@ -1412,7 +1799,7 @@ function YieldPage() {
             </select>
           </div>
           <div className="slider-row" style={{ marginTop: 10 }}>
-            <div className="slider-label"><span>Crop</span></div>
+            <div className="slider-label"><span>{t('cropLabel')}</span></div>
             <select value={crop} onChange={e => setCrop(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 7, fontSize: 13, color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
               <option>Rice</option>
               <option>Wheat</option>
@@ -1422,34 +1809,34 @@ function YieldPage() {
             </select>
           </div>
           <div className="slider-row" style={{ marginTop: 10 }}>
-            <div className="slider-label"><span>Area (acres)</span><span>{area}</span></div>
+            <div className="slider-label"><span>{t('areaLabel')}</span><span>{area}</span></div>
             <input type="range" min="1" max="50" value={area} onChange={e => setArea(+e.target.value)} />
           </div>
           <div className="slider-row">
-            <div className="slider-label"><span>Avg Rainfall (mm)</span><span>{rainfall}</span></div>
+            <div className="slider-label"><span>{t('avgRainLabel')}</span><span>{rainfall}</span></div>
             <input type="range" min="50" max="300" value={rainfall} onChange={e => setRainfall(+e.target.value)} />
           </div>
-          <button onClick={handlePredict} className="btn-primary">📈 Predict Yield</button>
+          <button onClick={handlePredict} className="btn-primary">📈 {t('predictYieldBtn')}</button>
         </div>
         <div>
           <div className="yield-result">
-            <div style={{ fontSize: 13, opacity: 0.85, marginBottom: 4 }}>Predicted Yield per Acre</div>
+            <div style={{ fontSize: 13, opacity: 0.85, marginBottom: 4 }}>{t('predictedYieldPerAcre')}</div>
             {loading ? (
-              <div style={{ fontSize: 24, fontWeight: 500, margin: '20px 0' }}>Forecasting...</div>
+              <div style={{ fontSize: 24, fontWeight: 500, margin: '20px 0' }}>{t('loading')}</div>
             ) : (
               <>
                 <div className="yield-num">{yieldPerAcre}</div>
-                <div style={{ fontSize: 14, opacity: 0.85, marginTop: 4 }}>quintals / acre</div>
+                <div style={{ fontSize: 14, opacity: 0.85, marginTop: 4 }}>{t('quintalsPerAcre')}</div>
                 <div style={{ marginTop: 12, fontSize: 12, opacity: 0.85 }}>
-                  Total Harvest: <strong>{totalYield} quintals</strong> on {area} acres.<br/>
-                  Estimated Revenue: <strong>₹{estimatedRevenue.toLocaleString('en-IN')}</strong>
+                  {t('totalHarvest')}: <strong>{totalYield} quintals</strong> on {area} acres.<br/>
+                  {t('estimatedRevenue')}: <strong>₹{estimatedRevenue.toLocaleString('en-IN')}</strong>
                 </div>
               </>
             )}
           </div>
           
           <div className="input-panel" style={{ marginTop: 12 }}>
-            <div className="form-label">Historical Yield Comparison (quintals/acre)</div>
+            <div className="form-label">{t('historicalYieldTitle')}</div>
             {error && <div style={{ color: 'var(--err)', fontSize: 12 }}>{error}</div>}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 8 }}>
               {history.map(y => (
@@ -1466,7 +1853,7 @@ function YieldPage() {
           
           {result && (
             <div className="advice-banner" style={{ marginTop: 12, fontSize: 11, display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-              <span style={{ fontWeight: 600 }}>💡 Production Tips:</span>
+              <span style={{ fontWeight: 600 }}>💡 {t('productionTips')}:</span>
               <ul style={{ margin: '4px 0 0 16px', padding: 0, listStyleType: 'disc' }}>
                 {tips.map((tip, idx) => <li key={idx}>{tip}</li>)}
               </ul>
@@ -1546,7 +1933,7 @@ function MarketPage() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div className="section-title" style={{ fontSize: 18, margin: 0 }}>💹 {t('market')}</div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span style={{ fontSize: 12, color: 'var(--gray)' }}>Select Crop:</span>
+          <span style={{ fontSize: 12, color: 'var(--gray)' }}>{t('selectCrop')}</span>
           <select value={crop} onChange={e => setCrop(e.target.value)} style={{ background: 'var(--card-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: '4px 8px', fontSize: 12, color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
             <option>Rice</option>
             <option>Wheat</option>
@@ -1574,27 +1961,27 @@ function MarketPage() {
       
       <div className="chart-card">
         <div className="chart-header">
-          <div className="section-title">{crop} Price Trends — Last 30 Days (₹/q)</div>
-          {loading && <span style={{ fontSize: 11, color: 'var(--gray)' }}>Updating chart...</span>}
+          <div className="section-title">{crop} {t('priceTrendsTitle')}</div>
+          {loading && <span style={{ fontSize: 11, color: 'var(--gray)' }}>{t('loading')}</span>}
         </div>
         <div className="chart-legend">
           <span className="legend-item">
             <span className="legend-dot" style={{ background: 'var(--green)' }} />
-            {crop} Mandi Price
+            {crop} {t('mandiPriceLabel')}
           </span>
         </div>
         <MarketChart data={history} />
       </div>
       
       <div className="input-panel">
-        <div className="section-title" style={{ marginBottom: 10 }}>Nearest Mandi Prices for {crop}</div>
+        <div className="section-title" style={{ marginBottom: 10 }}>{t('nearestMandiPrices')} {crop}</div>
         <table className="fert">
           <thead>
             <tr>
-              <th>Mandi Name</th>
-              <th>Distance</th>
-              <th>Price (₹/q)</th>
-              <th>Comparison / Action</th>
+              <th>{t('mandiNameTh')}</th>
+              <th>{t('distanceTh')}</th>
+              <th>{t('priceTh')}</th>
+              <th>{t('compActionTh')}</th>
             </tr>
           </thead>
           <tbody>
@@ -1609,7 +1996,7 @@ function MarketPage() {
                   {m.recommendation ? (
                     <span className="eligible-badge">{m.recommendation}</span>
                   ) : (
-                    <span style={{ fontSize: 11, color: 'var(--gray)' }}>Average rate</span>
+                    <span style={{ fontSize: 11, color: 'var(--gray)' }}>{t('averageRateLabel')}</span>
                   )}
                 </td>
               </tr>
@@ -1688,10 +2075,10 @@ function WeatherPage() {
             type="text"
             value={location}
             onChange={e => setLocation(e.target.value)}
-            placeholder="Search location..."
+            placeholder={t('searchLocationPlaceholder')}
             style={{ background: 'var(--card-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: '4px 10px', fontSize: 12, color: 'var(--charcoal)', outline: 'none' }}
           />
-          <button type="submit" className="btn-sm btn-green" style={{ padding: '4px 10px' }}>Search</button>
+          <button type="submit" className="btn-sm btn-green" style={{ padding: '4px 10px' }}>{t('searchBtn')}</button>
         </form>
       </div>
 
@@ -1699,16 +2086,16 @@ function WeatherPage() {
 
       <div className="weather-hero" style={{ background: condition.toLowerCase().includes('rain') || condition.toLowerCase().includes('storm') ? 'linear-gradient(135deg, #374151 0%, #1f2937 100%)' : 'linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%)' }}>
         {loading ? (
-          <div style={{ fontSize: 20, padding: 30 }}>Fetching live satellite weather forecast...</div>
+          <div style={{ fontSize: 20, padding: 30 }}>{t('fetchingWeatherLabel')}</div>
         ) : (
           <>
             <div style={{ fontSize: 48, marginBottom: 8 }}>{getConditionIcon(condition)}</div>
             <div className="w-temp-big">{currentTemp}°C</div>
             <div className="w-cond">{condition}</div>
             <div className="w-meta">
-              <span>💧 Humidity: {humidity}%</span>
-              <span>🌬️ Wind: {wind} km/h</span>
-              <span>🌡️ Feels like: {feelsLike}°C</span>
+              <span>💧 {t('humidityLabel')}: {humidity}%</span>
+              <span>🌬️ {t('windLabel')}: {wind} km/h</span>
+              <span>🌡️ {t('feelsLikeLabel')}: {feelsLike}°C</span>
             </div>
           </>
         )}
@@ -1716,7 +2103,7 @@ function WeatherPage() {
       
       {!loading && <div className="advice-banner">{advice}</div>}
       
-      <div className="section-title">5-Day Forecast</div>
+      <div className="section-title">{t('fiveDayForecast')}</div>
       <div className="day-cards-row">
         {forecast.map(d => (
           <div key={d.day} className="day-card-full">
@@ -1766,9 +2153,9 @@ function RotationPage() {
       <div className="section-title" style={{ fontSize: 18 }}>🔁 {t('rotation')}</div>
       <div className="two-col">
         <div className="input-panel">
-          <div className="form-label" style={{ marginBottom: 8 }}>Rotation Parameters</div>
+          <div className="form-label" style={{ marginBottom: 8 }}>{t('rotationParams')}</div>
           <div className="slider-row">
-            <div className="slider-label"><span>Current Crop</span></div>
+            <div className="slider-label"><span>{t('currentCrop')}</span></div>
             <select value={currentCrop} onChange={e => setCurrentCrop(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 7, fontSize: 13, color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
               <option>Rice</option>
               <option>Wheat</option>
@@ -1778,7 +2165,7 @@ function RotationPage() {
             </select>
           </div>
           <div className="slider-row" style={{ marginTop: 10 }}>
-            <div className="slider-label"><span>Soil Type</span></div>
+            <div className="slider-label"><span>{t('soilType')}</span></div>
             <select value={soilType} onChange={e => setSoilType(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 7, fontSize: 13, color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
               <option>Clay</option>
               <option>Sandy</option>
@@ -1787,40 +2174,40 @@ function RotationPage() {
             </select>
           </div>
           <div className="slider-row" style={{ marginTop: 10 }}>
-            <div className="slider-label"><span>Current Season</span></div>
+            <div className="slider-label"><span>{t('currentSeason')}</span></div>
             <select value={season} onChange={e => setSeason(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 7, fontSize: 13, color: 'var(--charcoal)', fontFamily: 'var(--font-body)' }}>
               <option>Kharif</option>
               <option>Rabi</option>
               <option>Zaid</option>
             </select>
           </div>
-          <button onClick={handlePredict} className="btn-primary">🔁 Plan Rotation Sequence</button>
+          <button onClick={handlePredict} className="btn-primary">🔁 {t('planRotationBtn')}</button>
         </div>
 
         <div className="result-panel">
           {error && <div style={{ color: 'var(--err)', fontSize: 13, marginBottom: 10 }}>{error}</div>}
-          {loading && <div style={{ textAlign: 'center', padding: 20 }}>Generating rotation timeline...</div>}
+          {loading && <div style={{ textAlign: 'center', padding: 20 }}>{t('generatingRotationLabel')}</div>}
           {!result && !loading && (
             <div style={{ textAlign: 'center', color: 'var(--gray)', padding: '80px 10px' }}>
-              Select parameters and click "Plan Rotation Sequence" to see timeline.
+              {t('selectParamsToPlan')}
             </div>
           )}
           {result && !loading && (
             <>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-                <span className="form-label" style={{ margin: 0 }}>Rotation Timeline</span>
+                <span className="form-label" style={{ margin: 0 }}>{t('rotationTimeline')}</span>
                 <span className="eligible-badge">Sustainability: {result.overall_sustainability_score}%</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                 {result.rotation_sequence.map((stage, idx) => (
                   <div key={idx} style={{ borderLeft: '3px solid var(--green)', paddingLeft: 12, position: 'relative' }}>
                     <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--green)' }}>
-                      Stage {idx + 1}: {stage.crop} ({stage.duration})
+                      {t('stageLabel')} {idx + 1}: {stage.crop} ({stage.duration})
                     </div>
                     <div style={{ fontSize: 11, color: 'var(--gray)', marginTop: 2 }}>{stage.soil_health_impact}</div>
                     <div style={{ fontSize: 12, color: 'var(--charcoal)', marginTop: 4 }}>{stage.description}</div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 4 }}>
-                      <span style={{ fontSize: 10, color: 'var(--gray)' }}>Nitrogen replenishment:</span>
+                      <span style={{ fontSize: 10, color: 'var(--gray)' }}>{t('nitrogenReplenishment')}</span>
                       <div className="alt-bar-wrap" style={{ maxWidth: 80, height: 4 }}><div className="alt-bar" style={{ width: `${stage.nitrogen_fixation_pct}%` }} /></div>
                       <span style={{ fontSize: 10, fontFamily: 'var(--font-data)', color: 'var(--green)' }}>{stage.nitrogen_fixation_pct}%</span>
                     </div>
@@ -1882,10 +2269,10 @@ function SchemesPage() {
       <div className="section-title" style={{ fontSize: 18 }}>🏛️ {t('schemes')}</div>
       <div className="schemes-layout">
         <div className="filter-panel" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          <div className="filter-title" style={{ margin: 0 }}>Farmer Profile</div>
+          <div className="filter-title" style={{ margin: 0 }}>{t('farmerProfileFilterTitle')}</div>
           
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span className="filter-label" style={{ margin: '0 0 4px' }}>State</span>
+            <span className="filter-label" style={{ margin: '0 0 4px' }}>{t('stateLabel')}</span>
             <select className="filter-select" value={state} onChange={e => setState(e.target.value)}>
               <option>Telangana</option>
               <option>Andhra Pradesh</option>
@@ -1896,7 +2283,7 @@ function SchemesPage() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span className="filter-label" style={{ margin: '0 0 4px' }}>Primary Crop</span>
+            <span className="filter-label" style={{ margin: '0 0 4px' }}>{t('cropLabel')}</span>
             <select className="filter-select" value={crop} onChange={e => setCrop(e.target.value)}>
               <option>Rice</option>
               <option>Wheat</option>
@@ -1909,7 +2296,7 @@ function SchemesPage() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span className="filter-label" style={{ margin: '0 0 4px' }}>Category</span>
+            <span className="filter-label" style={{ margin: '0 0 4px' }}>{language === 'hi' ? 'श्रेणी (Category)' : language === 'te' ? 'వర్గం (Category)' : language === 'ta' ? 'பிரிவு (Category)' : 'Category'}</span>
             <select className="filter-select" value={category} onChange={e => setCategory(e.target.value)}>
               <option>General</option>
               <option>Small/Marginal</option>
@@ -1919,16 +2306,16 @@ function SchemesPage() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span className="filter-label" style={{ margin: '0 0 4px' }}>Land Size (acres): {landSize}</span>
+            <span className="filter-label" style={{ margin: '0 0 4px' }}>{t('areaLabel')}: {landSize}</span>
             <input type="range" min="0.5" max="25" step="0.5" value={landSize} onChange={e => setLandSize(+e.target.value)} />
           </div>
 
-          <button onClick={handleCheckSchemes} className="btn-primary" style={{ marginTop: 10 }}>Check Eligibility</button>
+          <button onClick={handleCheckSchemes} className="btn-primary" style={{ marginTop: 10 }}>{t('checkEligibility')}</button>
         </div>
 
         <div className="scheme-cards">
           {error && <div style={{ color: 'var(--err)', fontSize: 13 }}>{error}</div>}
-          {loading && <div style={{ textAlign: 'center', padding: 20 }}>Verifying direct-benefit database eligibility...</div>}
+          {loading && <div style={{ textAlign: 'center', padding: 20 }}>{t('verifyingSchemesLabel')}</div>}
           {!loading && schemes.map((s, idx) => (
             <div key={idx} className="scheme-card" style={{ opacity: s.eligible ? 1 : 0.6 }}>
               <div className="scheme-top">
@@ -1938,14 +2325,14 @@ function SchemesPage() {
               <div className="scheme-desc">{s.desc}</div>
               
               <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-                <span className={`gauge-status ${s.category === 'Subsidy' ? 'status-good' : s.category === 'Insurance' ? 'status-ok' : 'status-low'}`} style={{ margin: 0, padding: '2px 8px' }}>
+                <span className={`gauge-status ${s.category === 'Subsidy' ? 'status-good' : s.category === 'Insurance' ? 'status-ok' : 'status-good'}`} style={{ margin: 0, padding: '2px 8px' }}>
                   {s.category}
                 </span>
                 {s.eligible ? (
-                  <span className="eligible-badge">✓ You're Eligible</span>
+                  <span className="eligible-badge">{t('youAreEligible')}</span>
                 ) : (
                   <span className="gauge-status status-low" style={{ background: '#fef2f2', color: 'var(--err)', margin: 0, padding: '2px 8px' }}>
-                    ✗ Not Eligible
+                    {t('notEligible')}
                   </span>
                 )}
               </div>
@@ -1961,8 +2348,8 @@ function SchemesPage() {
                     ))}
                   </div>
                   <div className="scheme-btns">
-                    <button className="btn-sm btn-green" onClick={() => alert(`Redirecting to official portal for ${s.name}...`)}>Apply Now</button>
-                    <button className="btn-sm btn-outline">View Guidelines</button>
+                    <button className="btn-sm btn-green" onClick={() => alert(`Redirecting to official portal for ${s.name}...`)}>{t('applyNow')}</button>
+                    <button className="btn-sm btn-outline">{t('viewGuidelines')}</button>
                   </div>
                 </>
               )}
@@ -2240,7 +2627,7 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
       const res = await axios.get('/api/auth/history');
       setHistory(res.data);
     } catch (err) {
-      console.error(err);
+      print(err);
     } finally {
       setLoading(false);
     }
@@ -2261,11 +2648,11 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
       const res = await axios.post('/api/auth/profile/update', { name, phone, state });
       onProfileUpdate(res.data);
       setEditing(false);
-      setMsg('Profile updated successfully!');
+      setMsg(language === 'hi' ? 'प्रोफ़ाइल सफलतापूर्वक अपडेट की गई!' : language === 'te' ? 'ప్రొఫైల్ విజయవంతంగా అప్‌డేట్ చేయబడింది!' : language === 'ta' ? 'சுயவிவரம் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!' : 'Profile updated successfully!');
       setTimeout(() => setMsg(''), 3000);
     } catch (err) {
       console.error(err);
-      setMsg('Failed to update profile.');
+      setMsg(language === 'hi' ? 'प्रोफ़ाइल अपडेट करने में विफल।' : language === 'te' ? 'ప్రొఫైల్ అప్‌డేట్ చేయడంలో విఫలమైంది.' : language === 'ta' ? 'சுயவிவரத்தை புதுப்பிக்க முடியவில்லை.' : 'Failed to update profile.');
     }
   };
 
@@ -2278,11 +2665,11 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
 
   const getModuleTitle = (mod) => {
     const titles = {
-      crop: '🌱 Crop Recommendation',
-      soil: '🪱 Soil Analysis',
-      disease: '🦠 Disease Scan',
-      yield: '📈 Yield Prediction',
-      rotation: '🔁 Crop Rotation Schedule'
+      crop: '🌱 ' + t('crop'),
+      soil: '🪱 ' + t('soil'),
+      disease: '🦠 ' + t('disease'),
+      yield: '📈 ' + t('yield'),
+      rotation: '🔁 ' + t('rotation')
     };
     return titles[mod] || mod.toUpperCase();
   };
@@ -2303,21 +2690,22 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
       const input = JSON.parse(item.input_data);
       const res = JSON.parse(item.result_data);
       if (item.module === 'crop') {
-        return `Recommended Crop: ${res.recommended_crop} (${res.confidence}% confidence)`;
+        const cropName = res.recommended_crop;
+        return (language === 'hi' ? `अनुशंसित फसल: ${cropName} (${res.confidence}% विश्वास)` : language === 'te' ? `సిఫార్సు చేయబడిన పంట: ${cropName} (${res.confidence}% విశ్వాసం)` : language === 'ta' ? `பரிந்துரைக்கப்பட்ட பயிர்: ${cropName} (${res.confidence}% நம்பிக்கை)` : `Recommended Crop: ${res.recommended_crop} (${res.confidence}% confidence)`);
       }
       if (item.module === 'soil') {
-        return `Soil Health Score: ${res.health_score}/100 (${res.health_label}). Fertilizers: ${res.fertilizers.map(f=>f.name).join(', ')}`;
+        return (language === 'hi' ? `मृदा स्वास्थ्य सूचकांक: ${res.health_score}/100 (${res.health_label})` : language === 'te' ? `నేల ఆరోగ్య స్కోరు: ${res.health_score}/100 (${res.health_label})` : language === 'ta' ? `மண் சுகாதார மதிப்பெண்: ${res.health_score}/100 (${res.health_label})` : `Soil Health Score: ${res.health_score}/100 (${res.health_label})`);
       }
       if (item.module === 'disease') {
-        return `Detected: ${res.disease} (${res.severity_label} severity)`;
+        return (language === 'hi' ? `रोग: ${res.disease} (${res.severity_label} गंभीरता)` : language === 'te' ? `వ్యాధి: ${res.disease} (${res.severity_label} తీవ్రత)` : language === 'ta' ? `நோய்: ${res.disease} (${res.severity_label} தீவிரம்)` : `Detected: ${res.disease} (${res.severity_label} severity)`);
       }
       if (item.module === 'yield') {
-        return `Predicted: ${res.predicted_yield_per_acre} q/acre. Crop: ${res.crop} in ${res.state}`;
+        return (language === 'hi' ? `पूर्वानुमानित उपज: ${res.predicted_yield_per_acre} क्विंटल/एकड़` : language === 'te' ? `అంచనా దిగుబడి: ${res.predicted_yield_per_acre} క్వింటాళ్లు/ఎకరా` : language === 'ta' ? `கணிக்கப்பட்ட விளைச்சல்: ${res.predicted_yield_per_acre} குவிண்டால்/ஏக்கர்` : `Predicted: ${res.predicted_yield_per_acre} q/acre`);
       }
       if (item.module === 'rotation') {
-        return `Current: ${input.current_crop}. Recommended rotation: ${res.rotation_sequence.map(s=>s.crop).join(' → ')}`;
+        return `Current: ${input.current_crop}. Recommended rotation sequence planned.`;
       }
-      return 'Prediction computed successfully.';
+      return 'Completed.';
     } catch (e) {
       return 'Completed.';
     }
@@ -2327,10 +2715,10 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
     return (
       <div style={{ textAlign: 'center', padding: '100px 20px' }}>
         <span style={{ fontSize: 48 }}>👤</span>
-        <h2 style={{ marginTop: 10 }}>Farmer Profile</h2>
-        <p style={{ color: 'var(--gray)', marginTop: 10, fontSize: 13 }}>You are currently browsing as a guest.</p>
-        <p style={{ fontSize: 13, marginTop: 8, color: 'var(--gray)' }}>Sign in to save reports, view fertilizer statistics, and track crop history logs.</p>
-        <button onClick={onLogout} className="btn-primary" style={{ maxWidth: 200, margin: '20px auto 0' }}>Sign In / Register</button>
+        <h2 style={{ marginTop: 10 }}>{t('farmerProfileFilterTitle')}</h2>
+        <p style={{ color: 'var(--gray)', marginTop: 10, fontSize: 13 }}>{t('guestModeMsg')}</p>
+        <p style={{ fontSize: 13, marginTop: 8, color: 'var(--gray)' }}>{t('guestModeDesc')}</p>
+        <button onClick={onLogout} className="btn-primary" style={{ maxWidth: 200, margin: '20px auto 0' }}>{t('welcome')}</button>
       </div>
     );
   }
@@ -2365,24 +2753,24 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
           </div>
         </div>
         <button onClick={() => setEditing(!editing)} className="btn-sm btn-outline" style={{ width: 'auto' }}>
-          {editing ? 'Cancel' : '✍️ Edit Profile'}
+          {editing ? t('cancel') : '✍️ ' + t('editProfile')}
         </button>
       </div>
 
       {editing && (
         <form onSubmit={handleUpdate} className="input-panel" style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 10 }}>
-          <div className="form-label" style={{ margin: 0 }}>Edit Details</div>
+          <div className="form-label" style={{ margin: 0 }}>{t('editDetails')}</div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
             <div>
-              <span style={{ fontSize: 11, color: 'var(--gray)' }}>Full Name</span>
+              <span style={{ fontSize: 11, color: 'var(--gray)' }}>{t('fullName')}</span>
               <input type="text" value={name} onChange={e => setName(e.target.value)} required style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 6, fontSize: 12, color: 'var(--charcoal)' }} />
             </div>
             <div>
-              <span style={{ fontSize: 11, color: 'var(--gray)' }}>Phone Number</span>
+              <span style={{ fontSize: 11, color: 'var(--gray)' }}>{t('phoneNumber')}</span>
               <input type="text" value={phone} onChange={e => setPhone(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 6, fontSize: 12, color: 'var(--charcoal)' }} />
             </div>
             <div>
-              <span style={{ fontSize: 11, color: 'var(--gray)' }}>State</span>
+              <span style={{ fontSize: 11, color: 'var(--gray)' }}>{t('stateLabel')}</span>
               <select value={state} onChange={e => setState(e.target.value)} style={{ width: '100%', background: 'var(--page-bg)', border: '0.5px solid var(--border)', borderRadius: 6, padding: 6, fontSize: 12, color: 'var(--charcoal)' }}>
                 <option>Telangana</option>
                 <option>Andhra Pradesh</option>
@@ -2392,35 +2780,35 @@ function ProfilePage({ user, onLogout, onProfileUpdate }) {
               </select>
             </div>
           </div>
-          <button type="submit" className="btn-primary" style={{ width: 140, marginTop: 4, padding: '6px 12px' }}>Save Changes</button>
+          <button type="submit" className="btn-primary" style={{ width: 140, marginTop: 4, padding: '6px 12px' }}>{t('saveChanges')}</button>
         </form>
       )}
 
       <div className="stats-strip">
         <div className="stat-box">
           <div className="stat-num">{totalPredictions}</div>
-          <div className="stat-lbl">Total Reports</div>
+          <div className="stat-lbl">{t('totalReportsLabel')}</div>
         </div>
         <div className="stat-box">
           <div className="stat-num">{diseaseScans}</div>
-          <div className="stat-lbl">Disease Scans</div>
+          <div className="stat-lbl">{t('diseaseScansLabel')}</div>
         </div>
         <div className="stat-box">
           <div className="stat-num">{soilScans}</div>
-          <div className="stat-lbl">Soil Tests</div>
+          <div className="stat-lbl">{t('soilTestsLabel')}</div>
         </div>
         <div className="stat-box">
           <div className="stat-num">{avgSoilScore}</div>
-          <div className="stat-lbl">Avg Soil Score</div>
+          <div className="stat-lbl">{t('avgSoilScoreLabel')}</div>
         </div>
       </div>
 
       <div className="input-panel" style={{ marginTop: 12 }}>
-        <div className="section-title" style={{ marginBottom: 10 }}>Farming History Logs</div>
-        {loading && <div style={{ fontSize: 12, color: 'var(--gray)' }}>Loading activity logs...</div>}
+        <div className="section-title" style={{ marginBottom: 10 }}>{t('farmingHistoryLogs')}</div>
+        {loading && <div style={{ fontSize: 12, color: 'var(--gray)' }}>{t('loadingLogs')}</div>}
         {!loading && history.length === 0 && (
           <div style={{ padding: '20px 0', textAlign: 'center', color: 'var(--gray)', fontSize: 12 }}>
-            No recent farm reports or predictions. Run the AI tools to populate your dashboard!
+            {t('noActivityLogs')}
           </div>
         )}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -2448,13 +2836,28 @@ function FloatingChatbotWidget({ language, user }) {
   const [loading, setLoading] = useState(false)
   const messagesEnd = useRef(null)
 
+  const welcomeText = {
+    en: "Namaste! 🙏 I'm Krishi AI, your floating assistant. How can I help you today?",
+    hi: "नमस्ते! 🙏 मैं आपका सहायक हूँ। आज मैं आपकी क्या मदद कर सकता हूँ?",
+    te: "నమస్తే! 🙏 నేను కృషి AI, మీ సహాయకుడిని. ఈ రోజు నేను మీకు ఎలా సహాయం చేయగలను?",
+    ta: "வணக்கம்! 🙏 நான் கிரிஷி AI, உங்கள் உதவியாளர். இன்று நான் உங்களுக்கு எவ்வாறு உதவ முடியும்?"
+  };
+
+  const widgetChips = {
+    en: ['🌾 Site features', '🪱 Soil guide', '🌦️ Weather help', '🏛️ PM-KISAN'],
+    hi: ['🌾 वेबसाइट सुविधाएँ', '🪱 मृदा गाइड', '🌦️ मौसम सहायता', '🏛️ पीएम-किसान'],
+    te: ['🌾 సైట్ ఫీచర్లు', '🪱 మట్టి మార్గదర్శి', '🌦️ వాతావరణ సహాయం', '🏛️ పీఎం-కిసాన్'],
+    ta: ['🌾 தளத்தின் அம்சங்கள்', '🪱 மண் வழிகாட்டி', '🌦️ வானிலை உதவி', '🏛️ பிரதம மந்திரி கிசான்']
+  };
+
+  const inputPlaceholder = {
+    en: "Ask Krishi AI...",
+    hi: "कृषक एआई से पूछें...",
+    te: "కృషి AI ని అడగండి...",
+    ta: "கிரிஷி AI-யிடம் கேளுங்கள்..."
+  };
+
   useEffect(() => {
-    const welcomeText = {
-      en: "Namaste! 🙏 I'm Krishi AI, your floating assistant. How can I help you today?",
-      hi: "नमस्ते! 🙏 मैं आपका सहायक हूँ। आज मैं आपकी क्या मदद कर सकता हूँ?",
-      te: "నమస్తే! 🙏 నేను కృషి AI, మీ సహాయకుడిని. ఈ రోజు నేను మీకు ఎలా సహాయం చేయగలను?",
-      ta: "வணக்கம்! 🙏 நான் கிரிஷி AI, உங்கள் உதவியாளர். இன்று நான் உங்களுக்கு எவ்வாறு உதவ முடியும்?"
-    };
     if (messages.length === 0) {
       setMessages([{ type: 'bot', text: welcomeText[language] || welcomeText['en'] }]);
     }
@@ -2481,7 +2884,13 @@ function FloatingChatbotWidget({ language, user }) {
       setMessages(prev => [...prev, { type: 'bot', text: res.data.response }]);
     } catch (err) {
       console.error(err);
-      setMessages(prev => [...prev, { type: 'bot', text: 'Sorry, I am facing connectivity issues.' }]);
+      const errorMsg = {
+        en: 'Sorry, I am facing connectivity issues.',
+        hi: 'क्षमा करें, मुझे कनेक्टिविटी समस्याओं का सामना करना पड़ रहा है।',
+        te: 'కనెక్టివిటీ సమస్యలు ఉన్నాయి.',
+        ta: 'இணைப்பு சிக்கல்கள் உள்ளன.'
+      };
+      setMessages(prev => [...prev, { type: 'bot', text: errorMsg[language] || errorMsg['en'] }]);
     } finally {
       setLoading(false);
     }
@@ -2509,7 +2918,7 @@ function FloatingChatbotWidget({ language, user }) {
     <>
       <div className="chat-widget-panel">
         <div className="chat-widget-header">
-          <div className="chat-widget-title">🤖 Krishi AI Assistant</div>
+          <div className="chat-widget-title">🤖 {translations[language]?.chatbot || 'AI Chatbot'}</div>
           <button className="chat-widget-close" onClick={() => setIsOpen(false)}>✕</button>
         </div>
         <div className="chat-widget-messages">
@@ -2534,12 +2943,12 @@ function FloatingChatbotWidget({ language, user }) {
           <div ref={messagesEnd} />
         </div>
         <div className="chat-widget-chips">
-          {['🌾 Site features', '🪱 Soil guide', '🌦️ Weather help', '🏛️ PM-KISAN'].map(c => (
+          {(widgetChips[language] || widgetChips['en']).map(c => (
             <span key={c} className="chip" onClick={() => handleSend(c)}>{c}</span>
           ))}
         </div>
         <div className="chat-widget-input-row">
-          <input className="chat-widget-input" placeholder="Ask Krishi AI..." value={input}
+          <input className="chat-widget-input" placeholder={inputPlaceholder[language] || inputPlaceholder['en']} value={input}
             onChange={e => setInput(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleSend()} />
           <button className="chat-widget-send-btn" onClick={() => handleSend()}>➤</button>

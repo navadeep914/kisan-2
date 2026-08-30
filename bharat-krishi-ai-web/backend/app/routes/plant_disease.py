@@ -12,8 +12,11 @@ service = PlantDiseaseService()
 async def predict(file: UploadFile = File(...), authorization: Optional[str] = Header(None), db = Depends(get_db)):
     try:
         result = service.detect(filename=file.filename)
-        
-        # Save to database history
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+    # Save to database history (non-fatal)
+    try:
         await save_prediction(
             db=db,
             authorization=authorization,
@@ -21,8 +24,8 @@ async def predict(file: UploadFile = File(...), authorization: Optional[str] = H
             input_data={"filename": file.filename},
             result_data=result
         )
-        
-        return result
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    except Exception:
+        pass
+    
+    return result
 
