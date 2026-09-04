@@ -3,7 +3,6 @@ import axios from 'axios'
 const API = axios.create({
   baseURL: 'https://bharat-krishi-ai.onrender.com/api'
 })
-
 export const cropAPI = {
   predict: data => API.post('/crop/predict', data),
 }
