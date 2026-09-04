@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: 'https://bharat-krishi-ai-backend.onrender.com/api'
+  baseURL: 'https://bharat-krishi-ai.onrender.com/api'
 })
 
 export const cropAPI = {
